@@ -1,0 +1,54 @@
+<!-- app/src/main/res/layout/activity_main.xml -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.fake.snakeice.GameView
+        android:id="@+id/gameView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- D-Pad buttons -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnUp"
+            android:text="▲"
+            android:layout_width="64dp"
+            android:layout_height="64dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnLeft"
+                android:text="◀"
+                android:layout_margin="8dp"
+                android:layout_width="64dp"
+                android:layout_height="64dp"/>
+
+            <Button
+                android:id="@+id/btnRight"
+                android:text="▶"
+                android:layout_margin="8dp"
+                android:layout_width="64dp"
+                android:layout_height="64dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnDown"
+            android:text="▼"
+            android:layout_width="64dp"
+            android:layout_height="64dp"/>
+    </LinearLayout>
+</FrameLayout>
